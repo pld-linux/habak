@@ -1,4 +1,5 @@
-Summary:	"Ha" Background
+Summary:	"Ha" Background - setting of window manager background image
+Summary(pl):	"Ha" Background - program do ustawiania t³a zarz±dcy okien
 Name:		habak
 Version:	0.2.1
 Release:	1
@@ -20,7 +21,7 @@ putting it on stack, so habak which is last on the command line is
 drawn over all previous habaks.
 
 %description -l pl
-Habak jest programem do ustawiania t³a mened¿era okien. Habak u¿ywa
+Habak jest programem do ustawiania t³a zarz±dcy okien. Habak u¿ywa
 modelu warstwowego. Najni¿sz± warstw± jest po prostu ca³kiem czarny
 ekran. Na tym ekranie mo¿na uk³adaæ inne obiekty, zwane habakami.
 Habaki dzielone s± na 3 rodzaje: pliki graficzne (images), fonty i
@@ -34,11 +35,13 @@ narysowany nad "wcze¶niejszymi" habakami.
 %setup -q
 
 %build
-%{__make}
+%{__make} \
+	CFLAGS="%{rpmcflags} -I/usr/X11R6/include -Wall"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 install habak $RPM_BUILD_ROOT%{_bindir}
 
 %clean
