@@ -1,12 +1,12 @@
 Summary:	"Ha" Background - setting of window manager background image
 Summary(pl):	"Ha" Background - program do ustawiania t³a zarz±dcy okien
 Name:		habak
-Version:	0.2.1
+Version:	0.2.4
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://lubuska.zapto.org/~hoppke/yellow_brown/%{name}-%{version}.tar.bz2
-# Source0-md5:	6797855ccbd06fa520678973649029f9
+# Source0-md5:	d3d514780588500a27f326f3a5c14511
 URL:		http://lubuska.zapto.org/~hoppke/yellow_brown/
 BuildRequires:	imlib2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
