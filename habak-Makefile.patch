@@ -1,0 +1,23 @@
+--- habak-0.2.4.1/src/Makefile~	2004-01-08 14:52:54.000000000 +0100
++++ habak-0.2.4.1/src/Makefile	2006-09-10 01:22:08.000000000 +0200
+@@ -8,16 +8,16 @@
+ 	ln -f habak ../habak
+ 
+ habak:	xcore.o random.o habak.o
+-	gcc $(LDFLAGS) -o habak xcore.o random.o habak.o
++	$(CC) $(LDFLAGS) -o habak xcore.o random.o habak.o
+ 
+ habak.o: habak.c types.h defaults.h proto.h
+-	gcc $(CFLAGS) -c habak.c -o habak.o
++	$(CC) $(CFLAGS) -c habak.c -o habak.o
+ 
+ random.o: random.c proto.h
+-	gcc $(CFLAGS) -c random.c -o random.o
++	$(CC) $(CFLAGS) -c random.c -o random.o
+ 
+ xcore.o: xcore.c
+-	gcc $(CFLAGS) -c xcore.c -o xcore.o
++	$(CC) $(CFLAGS) -c xcore.c -o xcore.o
+ 
+ clean:
+ 	rm habak *.o
