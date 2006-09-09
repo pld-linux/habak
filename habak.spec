@@ -8,6 +8,7 @@ Group:		X11/Window Managers/Tools
 Source0:	http://fvwm-crystal.berlios.de/files/files/habak/%{name}-%{version}.tar.gz
 # Source0-md5:	bdcdd813ca7ebeca1188a65d731c0a75
 URL:		http://fvwm-crystal.berlios.de/
+Patch0:		%{name}-Makefile.patch
 BuildRequires:	imlib2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -33,9 +34,11 @@ narysowany nad "wcze¶niejszymi" habakami.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make} \
+	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} -I/usr/X11R6/include -Wall"
 
 %install
