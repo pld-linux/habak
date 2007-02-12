@@ -1,5 +1,5 @@
 Summary:	"Ha" Background - setting of window manager background image
-Summary(pl):	"Ha" Background - program do ustawiania t³a zarz±dcy okien
+Summary(pl.UTF-8):   "Ha" Background - program do ustawiania tÅ‚a zarzÄ…dcy okien
 Name:		habak
 Version:	0.2.4.1
 Release:	1
@@ -21,16 +21,16 @@ habaks. Order of defining habaks in command line is also order of
 putting it on stack, so habak which is last on the command line is
 drawn over all previous habaks.
 
-%description -l pl
-Habak jest programem do ustawiania t³a zarz±dcy okien. Habak u¿ywa
-modelu warstwowego. Najni¿sz± warstw± jest po prostu ca³kiem czarny
-ekran. Na tym ekranie mo¿na uk³adaæ inne obiekty, zwane habakami.
-Habaki dzielone s± na 3 rodzaje: pliki graficzne (images), fonty i
-"obiekty wbudowane" (internals). Gotow± tapetê tworzy siê nak³adaj±c
-na czarny pulpit jeden lub wiêcej habaków dowolnego typu. Kolejno¶æ
-wystêpowania habaków w linii poleceñ jest zarazem kolejno¶ci±
-nak³adania ich na pulpit, czyli habak który wystêpuje ostatni zostanie
-narysowany nad "wcze¶niejszymi" habakami.
+%description -l pl.UTF-8
+Habak jest programem do ustawiania tÅ‚a zarzÄ…dcy okien. Habak uÅ¼ywa
+modelu warstwowego. NajniÅ¼szÄ… warstwÄ… jest po prostu caÅ‚kiem czarny
+ekran. Na tym ekranie moÅ¼na ukÅ‚adaÄ‡ inne obiekty, zwane habakami.
+Habaki dzielone sÄ… na 3 rodzaje: pliki graficzne (images), fonty i
+"obiekty wbudowane" (internals). GotowÄ… tapetÄ™ tworzy siÄ™ nakÅ‚adajÄ…c
+na czarny pulpit jeden lub wiÄ™cej habakÃ³w dowolnego typu. KolejnoÅ›Ä‡
+wystÄ™powania habakÃ³w w linii poleceÅ„ jest zarazem kolejnoÅ›ciÄ…
+nakÅ‚adania ich na pulpit, czyli habak ktÃ³ry wystÄ™puje ostatni zostanie
+narysowany nad "wczeÅ›niejszymi" habakami.
 
 %prep
 %setup -q
