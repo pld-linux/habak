@@ -1,5 +1,5 @@
 Summary:	"Ha" Background - setting of window manager background image
-Summary(pl.UTF-8):   "Ha" Background - program do ustawiania tła zarządcy okien
+Summary(pl.UTF-8):	"Ha" Background - program do ustawiania tła zarządcy okien
 Name:		habak
 Version:	0.2.4.1
 Release:	1
