@@ -1,13 +1,13 @@
 Summary:	"Ha" Background - setting of window manager background image
 Summary(pl.UTF-8):	"Ha" Background - program do ustawiania tła zarządcy okien
 Name:		habak
-Version:	0.2.4.1
+Version:	0.2.5
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
-Source0:	http://fvwm-crystal.berlios.de/files/files/habak/%{name}-%{version}.tar.gz
-# Source0-md5:	bdcdd813ca7ebeca1188a65d731c0a75
-URL:		http://fvwm-crystal.berlios.de/
+Source0:	http://download.gna.org/fvwm-crystal/habak/%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	bee5c394989367f7a4c5cb9ec99d307c
+URL:		http://fvwm-crystal.org/
 Patch0:		%{name}-Makefile.patch
 BuildRequires:	imlib2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
