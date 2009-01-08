@@ -10,6 +10,8 @@ Source0:	http://download.gna.org/fvwm-crystal/habak/%{version}/%{name}-%{version
 URL:		http://fvwm-crystal.org/
 Patch0:		%{name}-Makefile.patch
 BuildRequires:	imlib2-devel
+BuildRequires:	xorg-lib-libX11-devel
+BuildRequires:	xorg-proto-xproto-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
