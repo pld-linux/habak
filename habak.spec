@@ -7,12 +7,12 @@ License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://download.gna.org/fvwm-crystal/habak/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	bee5c394989367f7a4c5cb9ec99d307c
-URL:		http://fvwm-crystal.org/
 Patch0:		%{name}-Makefile.patch
+URL:		http://fvwm-crystal.org/
 BuildRequires:	imlib2-devel
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-proto-xproto-devel
-Provides:       WallpaperChanger
+Provides:	WallpaperChanger
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
